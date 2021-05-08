@@ -194,7 +194,7 @@ body {
 }
 
 .title-sections > span {
-    padding: .1rem 1.5rem;
+    padding: 2px 1.5rem;
     background: var(--pc);
     position: relative;
 }
@@ -246,6 +246,7 @@ h5 {
     margin: .5rem 0 0 0 !important;
     overflow: hidden;
     line-height: 1.7rem;
+    font-weight: bold;
 }
 
 .title-nota a {
@@ -349,6 +350,113 @@ iframe {
     text-decoration: underline;
 }
 
+.item-people {
+    padding: 2rem 0;
+    background-color: rgb(254 254 254 / 4%);
+    margin: 0 1rem 1rem 1rem;
+}
+
+/*Video & Photo*/
+.container-video {
+    overflow: hidden;
+}
+
+.container-video:hover {
+    box-shadow: 1px 1px 7px 0;
+}
+
+.container-video img {
+    transition: all .3s ease;
+}
+
+.container-video a {
+    background-color: var(--pc);
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    border-radius: 50%;
+    color: var(--sc);
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-clip: padding-box;
+    border: 0 solid transparent;
+    transition: all .3s ease;
+}
+
+.container-video a:hover {
+    border: 10px solid rgba(204, 204, 204, .50);
+}
+
+.vbox-overlay {
+    background: rgba(0, 0, 0, .8) !important;
+    opacity: 1;
+}
+
+.venoframe {
+    padding: 5px;
+    background: var(--sc);
+}
+
+.vbox-close {
+    color: var(--pc) !important;
+    background-color: var(--sc) !important;
+}
+
+.full-title-sections {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.videos main {
+    margin-top: -2px;
+}
+
+/*Post*/
+.post {
+    color: var(--pc);
+}
+
+.last-news-body .title-nota {
+    margin: 0 !important;
+}
+
+.title-post {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.extract-post {
+    font-size: 18px;
+    font-style: italic;
+    color: #999999;
+}
+
+.info-post {
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 2.5rem;
+}
+
+.info-post span {
+    margin: 0 .5rem;
+}
+
+.fac-twi i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.post-container p {
+    font-size: 16px !important;
+}
+
 /*Media Query´s*/
 @media (min-width: 576px) {
     #navMenu .nav-item {
@@ -364,6 +472,21 @@ iframe {
     .wrapper {
         margin-top: 10rem;
     }
+}
+
+footer {
+    background-color: var(--pc);
+    color: var(--sc);
+}
+
+footer a {
+    color: var(--sc);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--sc);
+    text-decoration: underline;
 }
 
 @media (min-width: 992px) {

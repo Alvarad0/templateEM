@@ -52,6 +52,12 @@ function init() {
             }
         }
     })
+
+    $(".venobox-video").venobox({
+        autoplay: true,
+        border: '5px',
+        spinner: 'wave',
+    })
 }
 
 init()
